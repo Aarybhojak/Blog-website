@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TIMELESS | Luxury Watch Journal</title>
+
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            TIMELESS
+            <span>WATCH JOURNAL</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#blog">Blog</a>
+            <a href="#create">Create Post</a>
+            <a href="#about">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">THE ART OF TIME</p>
+
+            <h1>
+                TIMELESS
+                <span>Elegance.</span>
+            </h1>
+
+            <p>
+                Discover the world of luxury watches, timeless craftsmanship,
+                iconic designs and the stories behind extraordinary timepieces.
+            </p>
+
+            <a href="#collection" class="hero-button">
+                EXPLORE COLLECTION
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COLLECTION ================= -->
+
+    <section id="collection" class="collection">
+
+        <div class="section-heading">
+
+            <p class="small-title">CURATED TIMEPIECES</p>
+
+            <h2>
+                Featured <span>Collection</span>
+            </h2>
+
+            <p>
+                A selection of watches that represent craftsmanship,
+                heritage and timeless design.
+            </p>
+
+        </div>
+
+
+        <div class="watch-container">
+
+
+            <!-- WATCH 1 -->
+
+            <div class="watch-card">
+
+                <div class="watch-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85"
+                        alt="Luxury Chronograph Watch">
+
+                </div>
+
+                <div class="watch-info">
+
+                    <p class="watch-type">CHRONOGRAPH</p>
+
+                    <h3>Classic Chronograph</h3>
+
+                    <p>
+                        A timeless design inspired by traditional
+                        mechanical chronographs.
+                    </p>
+
+                    <button onclick="showWatch('Classic Chronograph')">
+                        DISCOVER
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- WATCH 2 -->
+
+            <div class="watch-card">
+
+                <div class="watch-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=900&q=85"
+                        alt="Elegant Automatic Watch">
+
+                </div>
+
+                <div class="watch-info">
+
+                    <p class="watch-type">HERITAGE</p>
+
+                    <h3>Royal Automatic</h3>
+
+                    <p>
+                        Elegant design combined with the beauty
+                        of traditional automatic watchmaking.
+                    </p>
+
+                    <button onclick="showWatch('Royal Automatic')">
+                        DISCOVER
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- WATCH 3 -->
+
+            <div class="watch-card">
+
+                <div class="watch-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=900&q=85"
+                        alt="Luxury Rose Gold Watch">
+
+                </div>
+
+                <div class="watch-info">
+
+                    <p class="watch-type">ROSE GOLD</p>
+
+                    <h3>Heritage Diver</h3>
+
+                    <p>
+                        A sophisticated timepiece inspired by classic
+                        exploration and diving watches.
+                    </p>
+
+                    <button onclick="showWatch('Heritage Diver')">
+                        DISCOVER
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BLOG ================= -->
+
+    <section id="blog" class="blog">
+
+        <div class="section-heading">
+
+            <p class="small-title">THE JOURNAL</p>
+
+            <h2>
+                Stories Behind <span>Time</span>
+            </h2>
+
+            <p>
+                Explore watchmaking, history, design and the culture
+                surrounding fine timepieces.
+            </p>
+
+        </div>
+
+
+        <div id="posts" class="posts-container">
+
+
+            <!-- ARTICLE 1 -->
+
+            <article class="post">
+
+                <p class="post-category">WATCHMAKING</p>
+
+                <h3>
+                    Why Mechanical Watches Still Matter
+                </h3>
+
+                <p class="post-author">
+                    By <b>TIMELESS EDITORIAL</b>
+                </p>
+
+                <p>
+                    Mechanical watches represent centuries of
+                    engineering, craftsmanship and human creativity.
+                </p>
+
+                <button onclick="readMore(this)">
+                    READ MORE
+                </button>
+
+                <div class="extra-content">
+
+                    <p>
+                        Unlike a simple digital device, a mechanical watch
+                        contains hundreds of tiny components working together.
+                        This combination of engineering and craftsmanship
+                        is what makes traditional watchmaking so fascinating.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE 2 -->
+
+            <article class="post">
+
+                <p class="post-category">GUIDE</p>
+
+                <h3>
+                    Understanding Automatic Watches
+                </h3>
+
+                <p class="post-author">
+                    By <b>TIMELESS EDITORIAL</b>
+                </p>
+
+                <p>
+                    Automatic watches use the movement of your wrist
+                    to keep the mechanism running.
+                </p>
+
+                <button onclick="readMore(this)">
+                    READ MORE
+                </button>
+
+                <div class="extra-content">
+
+                    <p>
+                        Inside an automatic watch is a small rotor.
+                        As the wearer moves their wrist, the rotor moves
+                        and helps wind the mainspring of the watch.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE 3 -->
+
+            <article class="post">
+
+                <p class="post-category">HISTORY</p>
+
+                <h3>
+                    The Evolution of the Wristwatch
+                </h3>
+
+                <p class="post-author">
+                    By <b>TIMELESS EDITORIAL</b>
+                </p>
+
+                <p>
+                    From practical military instruments to luxury
+                    statements, wristwatches have changed dramatically.
+                </p>
+
+                <button onclick="readMore(this)">
+                    READ MORE
+                </button>
+
+                <div class="extra-content">
+
+                    <p>
+                        Wristwatches became increasingly popular during
+                        the twentieth century and eventually became
+                        symbols of personal style, engineering and status.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CREATE POST ================= -->
+
+    <section id="create" class="create-section">
+
+        <div class="section-heading">
+
+            <p class="small-title">YOUR VOICE</p>
+
+            <h2>
+                Create an <span>Article</span>
+            </h2>
+
+            <p>
+                Share your thoughts, stories and knowledge about watches.
+            </p>
+
+        </div>
+
+
+        <form id="postForm" class="post-form">
+
+            <label for="title">
+                Article Title
+            </label>
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter article title"
+            >
+
+
+            <label for="author">
+                Author Name
+            </label>
+
+            <input
+                type="text"
+                id="author"
+                placeholder="Enter your name"
+            >
+
+
+            <label for="content">
+                Article Content
+            </label>
+
+            <textarea
+                id="content"
+                rows="7"
+                placeholder="Write your article here..."
+            ></textarea>
+
+
+            <button type="submit">
+                PUBLISH ARTICLE
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+
+        <div class="about-content">
+
+            <p class="small-title">
+                ABOUT TIMELESS
+            </p>
+
+            <h2>
+                More Than Just
+                <span>A Watch.</span>
+            </h2>
+
+            <p>
+                TIMELESS is a student-created luxury watch journal
+                dedicated to exploring the fascinating world of
+                horology.
+            </p>
+
+            <p>
+                From classic mechanical movements to modern designs,
+                we believe every watch carries a story worth telling.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            TIMELESS
+        </div>
+
+        <p>
+            Luxury Watch Journal
+        </p>
+
+        <p class="copyright">
+            © 2026 TIMELESS. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="test.js"></script>
+
+</body>
+
+</html>
